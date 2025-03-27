@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="jpeg/png" sizes="32x32" href="./Smart.jpg" />
+  </head>
+  <body>
+    <div id="cont4">
+      <div class="contExtra">
+        <div class="pic">
+          <img src="./icon-check.svg" alt="" class="success" />
+          <span class="submitted">Success</span>
+        </div>
+        <br />
+        <div class="log">
+          <button id="logout" onclick="logs()">Log Out</button>
+        </div>
+        <!-- 718110 -->
+      </div>
+    </div>
+    <!-- <div class="bgtrans"> -->
+    <div id="cont3">
+      <p><span id="mark">!!</span> Are you sure you want to submit</p>
+      <button id="yes" onclick="yes()">YES</button>
+      <button id="no" onclick="no()">NO</button>
+    </div>
+    <!-- </div> -->
+    <div class="background" id="bg">
+      <div class="cont" id="cont1">
+        <div class="image">
+          <img src="./Smart-removebg-preview.png" alt="" />
+        </div>
+        <!-- <br /> -->
+        <!-- <button>WELCOME</button> -->
+        <!-- <br /> -->
+        <div class="input">
+          <p>First Name</p>
+          <input type="text" class="names" id="firstName" />
+          <p class="error" id="error">Fill in your First Name</p>
+          <p>Last Name</p>
+          <input type="text" id="lastName" class="names" />
+          <p class="error" id="error2">Fill in your Last Name</p>
+          <p>E-mail</p>
+          <input type="email" name="email" id="email" class="names" />
+          <p class="error" id="error3">Fill in your email</p>
+        </div>
+        <button id="submit" onclick="page2()" onmouseleave="decrease()" onmouseenter="increase()">
+          Log In
+        </button>
+      </div>
+    </div>
+    <div class="cont2" id="cont2">
+      <button class="section">Section 1</button>
+      <!-- <br>
+    <br> -->
+      <p class="name">
+        WELCOME, <span id="user">Tomosori</span> <span id="name2">Ayomide</span>
+      </p>
+      <strong> Email: "<strong id="emailUser1"> </strong>" </strong>
+      <p class="Instruction">
+        <strong>Instruction:</strong> Answer all question
+      </p>
+      <p class="Instruction"><strong>Introduction To Programming</strong></p>
+      <div class="question">
+        <div class="Left-sec">
+          <ol>
+            <li>
+              One of the following is not an importance of HTML 5 semantics
+            </li>
+            <p><input type="radio" name="opt1" />Improved accessibility</p>
+            <p><input type="radio" name="opt1" /> Easier maintainance</p>
+            <input type="radio" name="opt1" />Diminished user experience
+            <p>
+              <input type="radio" name="opt1" />Better Search Engine
+              Optimization
+            </p>
+            <p><li>Which of the following is not a semantic 5 element</li></p>
+            <input type="radio" name="opt2" />Div
+            <!--</input>-->
+            <p><input type="radio" name="opt2" /> Form</p>
+            <p><input type="radio" name="opt2" />Table</p>
+            <p><input type="radio" name="opt2" /> Article</p>
+            <p><li>One of this is not a unit of measurement</li></p>
+            <p><input type="radio" name="opt3" /> pixel</p>
+            <p><input type="radio" name="opt3" /> Rem</p>
+            <p><input type="radio" name="opt3" />Mg</p>
+            <p><input type="radio" name="opt3" />Rex</p>
+            <p><li>Which of this is not a type of styling in CSS</li></p>
+            <p><input type="radio" name="Test" id="" /> Inline styling</p>
+            <p><input type="radio" name="Test" id="" />Internal styling</p>
+            <p><input type="radio" name="Test" id="" />External styling</p>
+            <p><input type="radio" name="Test" id="" />Outline styling</p>
+            <p>
+              <li>
+                Which of the proprty below gives you the ability to manipu;ate
+                long text in a short container
+              </li>
+            </p>
+            <p><input type="radio" name="type" />Text-distribute</p>
+            <p><input type="radio" name="type" />Text-transform</p>
+            <p><input type="radio" name="type" />Text-overflow</p>
+            <p><input type="radio" name="type" />Text-align</p>
+          </ol>
+        </div>
+        <div class="right-sec">
+          <ol>
+            <li>HTML elements can be grouped into</li>
+            <p><input type="radio" name="HTML" /> inline and block elements</p>
+            <p><input type="radio" name="HTML" />inline and outline elements</p>
+            <p><input type="radio" name="HTML" />Outline and block elements</p>
+            <p><input type="radio" name="HTML" /> block and internal element</p>
+            <p>
+              <li>
+                The space that affects an element and the other element is
+                called
+              </li>
+            </p>
+            <p><input type="radio" name="ooo" /> Margin</p>
+            <p><input type="radio" name="ooo" />padding</p>
+            <p><input type="radio" name="ooo" />Box model</p>
+            <p><input type="radio" name="ooo" />Spacing</p>
+            <p><li>Which of the following is not used to color in CSS</li></p>
+            <p><input type="radio" name="oop" />HSL</p>
+            <p><input type="radio" name="oop" />RGB</p>
+            <p><input type="radio" name="oop" />HSLA</p>
+            <p><input type="radio" name="oop" />FYT</p>
+            <p><li>What is the full meaning of API</li></p>
+            <p>
+              <input type="radio" name="opp" />Application Programming Identity
+            </p>
+            <p>
+              <input type="radio" name="opp" />Application Programming Interface
+            </p>
+            <p>
+              <input type="radio" name="opp" />Applied Programming Interface
+            </p>
+            <p><input type="radio" name="opp" />Applied Programming Identity</p>
+            <li>What is the full meaning of CSS</li>
+            <p><input type="radio" name="ppp" />Cascaded Style Sheet</p>
+            <p><input type="radio" name="ppp" />Cascaded Styling Sheet</p>
+            <p><input type="radio" name="ppp" />Carded Style Sheet</p>
+            <p><input type="radio" name="ppp" />Cascaded Sheet Style</p>
+          </ol>
+        </div>
+      </div>
+      <button id="done" onclick="submit()">Submit</button>
+    </div>
+
+    <!-- <br /> -->
+    <!-- <br /> -->
+    <!-- <a href="./index.html"><input type="submit" value="Submit" /></a> -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
